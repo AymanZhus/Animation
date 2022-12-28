@@ -1,0 +1,86 @@
+﻿<Window x:Class ="HappyNewA.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HappyNewA"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Canvas>
+        <Canvas.Background>
+            <ImageBrush ImageSource="sky.jpg"/>
+        </Canvas.Background>
+
+        <Image Source="fireworks.png" Height="313" Canvas.Top="-48" Width="262" RenderTransformOrigin="0.5,0.5" Canvas.Left="-18">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-48.348"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+        <Image Source="fireworks.png" Height="313" Canvas.Top="-44" Width="262" RenderTransformOrigin="0.5,0.5" Canvas.Left="564">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="41.433"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+        <Label Content="С Новым Годом!" FontFamily="Times" FontSize="50" FontWeight="ExtraBold" Canvas.Top="72" Canvas.Left="180" RenderTransformOrigin="0.5,0.5">
+            <Label.Foreground>
+                <LinearGradientBrush>
+                    <GradientStop Color="Blue" Offset="0" />
+                    <GradientStop Color="White" Offset="1" />
+                </LinearGradientBrush>
+            </Label.Foreground>
+            <Label.RenderTransform>
+                <RotateTransform />
+            </Label.RenderTransform>
+            <Label.Triggers>
+                <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation Storyboard.TargetProperty="Foreground.GradientStops[0].Color"
+                                            To="Red" Duration="0:0:3" AutoReverse="True" RepeatBehavior="Forever"/>
+                            <ColorAnimation Storyboard.TargetProperty="Foreground.GradientStops[1].Color"
+                                            To="Yellow" Duration="0:0:3" AutoReverse="True" RepeatBehavior="Forever"/>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.Angle" From="0" To="360" Duration="0:0:1"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Label.Triggers>
+        </Label>
+
+        <Button Content="Что вас ждет в Новом году?" FontFamily="Times" FontSize="20" FontWeight="ExtraBold" Canvas.Top="353" Canvas.Left="260" RenderTransformOrigin="0.5,0.5" Background="{x:Null}" BorderThickness="0" Opacity="0" Click="Button_Click" Height="56" Width="275">
+            <Button.Foreground>
+                <LinearGradientBrush>
+                    <GradientStop Color="LightPink" Offset="0" />
+                    <GradientStop Color="LightGreen" Offset="1" />
+                </LinearGradientBrush>
+            </Button.Foreground>
+            <Button.Triggers>
+                <EventTrigger RoutedEvent="Window.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation Storyboard.TargetProperty="Foreground.GradientStops[0].Color"
+                                            To="PaleVioletRed" Duration="0:0:3" AutoReverse="True" RepeatBehavior="Forever"></ColorAnimation>
+                            <ColorAnimation Storyboard.TargetProperty="Foreground.GradientStops[1].Color"
+                                            To="LightYellow" Duration="0:0:3" AutoReverse="True" RepeatBehavior="Forever"></ColorAnimation>
+                            <DoubleAnimation Storyboard.TargetProperty="Opacity" To="1" Duration="0:0:1"></DoubleAnimation>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Button.Triggers>
+        </Button>
+
+    </Canvas>
+
+
+</Window>

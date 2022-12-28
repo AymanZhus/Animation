@@ -1,0 +1,15 @@
+C:\Users\user\Desktop\HPYanimation\HappyNewA\HappyNewA\bin\Debug\HappyNewA.exe.config
+C:\Users\user\Desktop\HPYanimation\HappyNewA\HappyNewA\bin\Debug\HappyNewA.exe
+C:\Users\user\Desktop\HPYanimation\HappyNewA\HappyNewA\bin\Debug\HappyNewA.pdb
+C:\Users\user\Desktop\HPYanimation\HappyNewA\HappyNewA\obj\Debug\MainWindow.g.cs
+C:\Users\user\Desktop\HPYanimation\HappyNewA\HappyNewA\obj\Debug\App.g.cs
+C:\Users\user\Desktop\HPYanimation\HappyNewA\HappyNewA\obj\Debug\HappyNewA_MarkupCompile.cache
+C:\Users\user\Desktop\HPYanimation\HappyNewA\HappyNewA\obj\Debug\HappyNewA_MarkupCompile.lref
+C:\Users\user\Desktop\HPYanimation\HappyNewA\HappyNewA\obj\Debug\MainWindow.baml
+C:\Users\user\Desktop\HPYanimation\HappyNewA\HappyNewA\obj\Debug\HappyNewA.g.resources
+C:\Users\user\Desktop\HPYanimation\HappyNewA\HappyNewA\obj\Debug\HappyNewA.Properties.Resources.resources
+C:\Users\user\Desktop\HPYanimation\HappyNewA\HappyNewA\obj\Debug\HappyNewA.csproj.GenerateResource.cache
+C:\Users\user\Desktop\HPYanimation\HappyNewA\HappyNewA\obj\Debug\HappyNewA.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\HPYanimation\HappyNewA\HappyNewA\obj\Debug\HappyNewA.exe
+C:\Users\user\Desktop\HPYanimation\HappyNewA\HappyNewA\obj\Debug\HappyNewA.pdb
+C:\Users\user\Desktop\HPYanimation\HappyNewA\HappyNewA\obj\Debug\HappyNewA.csproj.AssemblyReference.cache
